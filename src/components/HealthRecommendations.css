@@ -1,0 +1,147 @@
+.health-recommendations {
+    margin-top: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .health-recommendations-header {
+    padding: 16px;
+    background: linear-gradient(to right, #f0f4ff, #e6eeff);
+  }
+  
+  .header-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .header-icon {
+    width: 20px;
+    height: 20px;
+    color: #3b82f6;
+    margin-right: 8px;
+  }
+  
+  .health-metrics {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .health-metrics {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .metric-card {
+    background-color: #f0f7ff;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .metric-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .metric-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .sun-icon {
+    color: #f59e0b;
+  }
+  
+  .wind-icon {
+    color: #3b82f6;
+  }
+  
+  .droplets-icon {
+    color: #3b82f6;
+  }
+  
+  .metric-header h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .metric-content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  .metric-value {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .high-severity {
+    color: #dc2626;
+  }
+  
+  .medium-severity {
+    color: #ea580c;
+  }
+  
+  .low-severity {
+    color: #d97706;
+  }
+  
+  .safe-severity {
+    color: #16a34a;
+  }
+  
+  .unavailable {
+    color: #9ca3af;
+  }
+  
+  .precip-value {
+    color: #2563eb;
+  }
+  
+  .metric-unit {
+    margin-left: 4px;
+    color: #6b7280;
+  }
+  
+  .metric-description {
+    font-size: 14px;
+    color: #4b5563;
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .health-recommendations {
+      background-color: #1f2937;
+      border-color: #374151;
+    }
+    
+    .health-recommendations-header {
+      background: #2d3748;
+    }
+    
+    .header-icon {
+      color: #60a5fa;
+    }
+    
+    .metric-card {
+      background-color: #374151;
+    }
+    
+    .metric-description,
+    .metric-unit {
+      color: #d1d5db;
+    }
+  }
