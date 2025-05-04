@@ -177,7 +177,7 @@ await axios.post('http://localhost:8000/weather/', {
           )}
 
           <footer className="footer">
-            Built by Tharunekaa Madhavan | Powered by WeatherAPI | PMA Accelerator
+            Built by Tharunekaa Madhavan | Powered by WeatherAPI | PM Accelerator
           </footer>
         </div>
       </div>
